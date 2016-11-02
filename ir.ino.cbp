@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ir.ino" />
+		<Option pch_mode="2" />
+		<Option compiler="avr-gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ir.ino.elf" prefix_auto="1" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="lib/libcore.a;" />
+				<Option additional_output="bin/Debug/ir.ino.dump;bin/Debug/ir.ino.lss;bin/Debug/ir.ino.map;" />
+				<Option type="5" />
+				<Option compiler="avr-gcc" />
+				<Linker>
+					<Add library="lib/libcore.a" />
+					<Add directory="lib" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="avr-size $(TARGET_OUTPUT_FILE)" />
+					<Add after="avr-objdump -h -S $(TARGET_OUTPUT_FILE) &gt; $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).lss" />
+					<Add after="avr-objdump -s $(TARGET_OUTPUT_FILE) &gt; $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).dump" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ir.ino.elf" prefix_auto="1" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option external_deps="lib/libcore.a;" />
+				<Option additional_output="bin/Release/ir.ino.dump;bin/Release/ir.ino.lss;bin/Release/ir.ino.map;" />
+				<Option type="5" />
+				<Option compiler="avr-gcc" />
+				<Linker>
+					<Add library="lib/libcore.a" />
+					<Add directory="lib" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="avr-size $(TARGET_OUTPUT_FILE)" />
+					<Add after="avr-objdump -h -S $(TARGET_OUTPUT_FILE) &gt; $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).lss" />
+					<Add after="avr-objdump -s $(TARGET_OUTPUT_FILE) &gt; $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).dump" />
+					<Add after="avrdude -p m328p -c usbasp -U flash:w:$(TARGET_OUTPUT_FILE):e -U lfuse:w:$(TARGET_OUTPUT_FILE):e -U hfuse:w:$(TARGET_OUTPUT_FILE):e -U efuse:w:$(TARGET_OUTPUT_FILE):e" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="arduino_core">
+				<Option output="lib/core" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/arduino_core/" />
+				<Option type="2" />
+				<Option compiler="avr-gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Os" />
+				</Compiler>
+			</Target>
+			<Environment>
+				<Variable name="MCU" value="atmega328p" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Os" />
+			<Add option="-Wall" />
+			<Add option="-mmcu=atmega328p" />
+			<Add option="-fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics" />
+			<Add option="-std=gnu++11" />
+			<Add option="-std=gnu11" />
+			<Add option="-Wstrict-overflow" />
+			<Add option="-DF_CPU=16000000UL" />
+			<Add option="-DARDUINO=10607" />
+			<Add option="-DARDUINO_AVR_UNO" />
+			<Add option="-DARDUINO_ARCH_AVR" />
+			<Add option="-D__AVR_ARCH__=5" />
+			<Add option="-D__AVR_ATmega328P__" />
+			<Add directory="arduino" />
+			<Add directory="variants/standard_m328p" />
+		</Compiler>
+		<Linker>
+			<Add option="-mmcu=atmega328p" />
+			<Add option="-Wl,-Map=$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).map,--cref" />
+			<Add option="-Wl,--gc-sections" />
+		</Linker>
+		<Unit filename="IRremote2.cpp">
+			<Option target="Release" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="IRremote2.h">
+			<Option target="Release" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="IRremoteInt.h">
+			<Option target="Release" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="arduino/Arduino.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/CDC.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/Client.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/HardwareSerial.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/HardwareSerial.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/HardwareSerial0.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/HardwareSerial1.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/HardwareSerial2.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/HardwareSerial3.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/HardwareSerial_private.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/IPAddress.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/IPAddress.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/PluggableUSB.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/PluggableUSB.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/Print.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/Print.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/Printable.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/Server.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/Stream.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/Stream.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/Tone.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/USBAPI.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/USBCore.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/USBCore.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/USBDesc.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/Udp.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/WCharacter.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/WInterrupts.c">
+			<Option compilerVar="CC" />
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/WMath.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/WString.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/WString.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/binary.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/hooks.c">
+			<Option compilerVar="CC" />
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/main.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/new.cpp">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/new.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/wiring.c">
+			<Option compilerVar="CC" />
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/wiring_analog.c">
+			<Option compilerVar="CC" />
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/wiring_digital.c">
+			<Option compilerVar="CC" />
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/wiring_private.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/wiring_pulse.S">
+			<Option link="0" />
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/wiring_pulse.c">
+			<Option compilerVar="CC" />
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="arduino/wiring_shift.c">
+			<Option compilerVar="CC" />
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="cxa_full_virtual.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="fuse.c">
+			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="main.cpp">
+			<Option target="Release" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="test.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="variants/standard_m328p/fuse.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="variants/standard_m328p/pins_arduino.h">
+			<Option target="arduino_core" />
+		</Unit>
+		<Unit filename="variants/standard_m328p/variant.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="variants/standard_m328p/variant_serial.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="variants/standard_m328p/variant_ticksize.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

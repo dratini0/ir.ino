@@ -1,0 +1,295 @@
+# depslib dependency file v1.0
+1459172054 source:/home/bala/programming/sketchbook/ir.ino/fuse.c
+	<fuse.h>
+
+1459026140 source:/home/bala/programming/sketchbook/ir.ino/main.c
+	<avr/io.h>
+
+1459351641 source:/home/bala/programming/sketchbook/ir.ino/IRremote2.cpp
+	"IRremote2.h"
+	<variant.h>
+	<avr/interrupt.h>
+	<Arduino.h>
+
+1459347167 /home/bala/programming/sketchbook/ir.ino/IRremote2.h
+	<variant_ticksize.h>
+
+1459193609 /home/bala/programming/sketchbook/ir.ino/IRremoteInt.h
+	<Arduino.h>
+	<variant.h>
+
+1455897446 /home/bala/.arduino15/packages/arduino/hardware/avr/1.6.10/cores/arduino/Arduino.h
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<math.h>
+	<avr/pgmspace.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	"binary.h"
+	"WCharacter.h"
+	"WString.h"
+	"HardwareSerial.h"
+	"USBAPI.h"
+	"pins_arduino.h"
+
+1449736786 /home/bala/.arduino15/packages/arduino/hardware/avr/1.6.10/cores/arduino/binary.h
+
+1449736786 /home/bala/.arduino15/packages/arduino/hardware/avr/1.6.10/cores/arduino/WCharacter.h
+	<ctype.h>
+
+1455897446 /home/bala/.arduino15/packages/arduino/hardware/avr/1.6.10/cores/arduino/WString.h
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<avr/pgmspace.h>
+
+1455897446 /home/bala/.arduino15/packages/arduino/hardware/avr/1.6.10/cores/arduino/HardwareSerial.h
+	<inttypes.h>
+	"Stream.h"
+
+1455897446 /home/bala/.arduino15/packages/arduino/hardware/avr/1.6.10/cores/arduino/Stream.h
+	<inttypes.h>
+	"Print.h"
+
+1449736786 /home/bala/.arduino15/packages/arduino/hardware/avr/1.6.10/cores/arduino/Print.h
+	<inttypes.h>
+	<stdio.h>
+	"WString.h"
+	"Printable.h"
+
+1449736786 /home/bala/.arduino15/packages/arduino/hardware/avr/1.6.10/cores/arduino/Printable.h
+	<stdlib.h>
+
+1455897446 /home/bala/.arduino15/packages/arduino/hardware/avr/1.6.10/cores/arduino/USBAPI.h
+	<inttypes.h>
+	<avr/pgmspace.h>
+	<avr/eeprom.h>
+	<avr/interrupt.h>
+	<util/delay.h>
+	"Arduino.h"
+	"USBDesc.h"
+	"USBCore.h"
+
+1455897446 /home/bala/.arduino15/packages/arduino/hardware/avr/1.6.10/cores/arduino/USBDesc.h
+
+1457436150 /home/bala/.arduino15/packages/arduino/hardware/avr/1.6.10/cores/arduino/USBCore.h
+	"USBAPI.h"
+
+1455897446 /home/bala/.arduino15/packages/arduino/hardware/avr/1.6.10/variants/standard/pins_arduino.h
+	<avr/pgmspace.h>
+
+1459357663 source:/home/bala/programming/sketchbook/ir.ino/main.cpp
+	<Arduino.h>
+	"IRremote2.h"
+
+1457436150 source:/home/bala/programming/sketchbook/ir.ino/arduino/CDC.cpp
+	"USBAPI.h"
+	<avr/wdt.h>
+	<util/atomic.h>
+
+1455897446 /home/bala/programming/sketchbook/ir.ino/arduino/USBAPI.h
+	<inttypes.h>
+	<avr/pgmspace.h>
+	<avr/eeprom.h>
+	<avr/interrupt.h>
+	<util/delay.h>
+	"Arduino.h"
+	"USBDesc.h"
+	"USBCore.h"
+
+1455897446 /home/bala/programming/sketchbook/ir.ino/arduino/Arduino.h
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<math.h>
+	<avr/pgmspace.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	"binary.h"
+	"WCharacter.h"
+	"WString.h"
+	"HardwareSerial.h"
+	"USBAPI.h"
+	"pins_arduino.h"
+
+1449736786 /home/bala/programming/sketchbook/ir.ino/arduino/binary.h
+
+1449736786 /home/bala/programming/sketchbook/ir.ino/arduino/WCharacter.h
+	<ctype.h>
+
+1455897446 /home/bala/programming/sketchbook/ir.ino/arduino/WString.h
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<avr/pgmspace.h>
+
+1455897446 /home/bala/programming/sketchbook/ir.ino/arduino/HardwareSerial.h
+	<inttypes.h>
+	"Stream.h"
+
+1455897446 /home/bala/programming/sketchbook/ir.ino/arduino/Stream.h
+	<inttypes.h>
+	"Print.h"
+
+1449736786 /home/bala/programming/sketchbook/ir.ino/arduino/Print.h
+	<inttypes.h>
+	<stdio.h>
+	"WString.h"
+	"Printable.h"
+
+1449736786 /home/bala/programming/sketchbook/ir.ino/arduino/Printable.h
+	<stdlib.h>
+
+1455897446 /home/bala/programming/sketchbook/ir.ino/arduino/pins_arduino.h
+	<avr/pgmspace.h>
+
+1455897446 /home/bala/programming/sketchbook/ir.ino/arduino/USBDesc.h
+
+1457436150 /home/bala/programming/sketchbook/ir.ino/arduino/USBCore.h
+	"USBAPI.h"
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/HardwareSerial.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<inttypes.h>
+	"Arduino.h"
+	"HardwareSerial.h"
+	"HardwareSerial_private.h"
+
+1449736786 /home/bala/programming/sketchbook/ir.ino/arduino/HardwareSerial_private.h
+	"wiring_private.h"
+
+1455897446 /home/bala/programming/sketchbook/ir.ino/arduino/wiring_private.h
+	<avr/io.h>
+	<avr/interrupt.h>
+	<stdio.h>
+	<stdarg.h>
+	"Arduino.h"
+
+1449736786 source:/home/bala/programming/sketchbook/ir.ino/arduino/HardwareSerial0.cpp
+	"Arduino.h"
+	"HardwareSerial.h"
+	"HardwareSerial_private.h"
+
+1449736786 source:/home/bala/programming/sketchbook/ir.ino/arduino/HardwareSerial1.cpp
+	"Arduino.h"
+	"HardwareSerial.h"
+	"HardwareSerial_private.h"
+
+1449736786 source:/home/bala/programming/sketchbook/ir.ino/arduino/HardwareSerial2.cpp
+	"Arduino.h"
+	"HardwareSerial.h"
+	"HardwareSerial_private.h"
+
+1449736786 source:/home/bala/programming/sketchbook/ir.ino/arduino/HardwareSerial3.cpp
+	"Arduino.h"
+	"HardwareSerial.h"
+	"HardwareSerial_private.h"
+
+1449736786 source:/home/bala/programming/sketchbook/ir.ino/arduino/hooks.c
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/IPAddress.cpp
+	<Arduino.h>
+	<IPAddress.h>
+
+1455897446 /home/bala/.arduino15/packages/arduino/hardware/avr/1.6.10/cores/arduino/IPAddress.h
+	<stdint.h>
+	"Printable.h"
+	"WString.h"
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/main.cpp
+	<Arduino.h>
+
+1449736786 source:/home/bala/programming/sketchbook/ir.ino/arduino/new.cpp
+	<stdlib.h>
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/PluggableUSB.cpp
+	"USBAPI.h"
+	"PluggableUSB.h"
+
+1455897446 /home/bala/programming/sketchbook/ir.ino/arduino/PluggableUSB.h
+	"USBAPI.h"
+	<stdint.h>
+
+1457435738 source:/home/bala/programming/sketchbook/ir.ino/arduino/Print.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<math.h>
+	"Arduino.h"
+	"Print.h"
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/Stream.cpp
+	"Arduino.h"
+	"Stream.h"
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/Tone.cpp
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	"Arduino.h"
+	"pins_arduino.h"
+
+1457436150 source:/home/bala/programming/sketchbook/ir.ino/arduino/USBCore.cpp
+	"USBAPI.h"
+	"PluggableUSB.h"
+	<stdlib.h>
+
+1457435738 source:/home/bala/programming/sketchbook/ir.ino/arduino/WInterrupts.c
+	<inttypes.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	<stdio.h>
+	"wiring_private.h"
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/wiring.c
+	"wiring_private.h"
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/wiring_analog.c
+	"wiring_private.h"
+	"pins_arduino.h"
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/wiring_digital.c
+	"wiring_private.h"
+	"pins_arduino.h"
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/wiring_pulse.c
+	"wiring_private.h"
+	"pins_arduino.h"
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/wiring_shift.c
+	"wiring_private.h"
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/WMath.cpp
+	"stdlib.h"
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/WString.cpp
+	"WString.h"
+
+1455897446 source:/home/bala/programming/sketchbook/ir.ino/arduino/wiring_pulse.S
+	<avr/io.h>
+
+1459093359 source:/home/bala/programming/sketchbook/ir.ino/cxa_full_virtual.cpp
+
+1455897446 /home/bala/programming/sketchbook/ir.ino/arduino/IPAddress.h
+	<stdint.h>
+	"Printable.h"
+	"WString.h"
+
+1459170707 /home/bala/programming/sketchbook/ir.ino/variants/standard_m328p/fuse.c
+	<avr/io.h>
+
+1459170707 /home/bala/programming/sketchbook/ir.ino/variants/standard_m328p/fuse.h
+	<avr/io.h>
+
+1459356728 /home/bala/programming/sketchbook/ir.ino/variants/standard_m328p/variant.h
+	<avr/io.h>
+	<avr/interrupt.h>
+	"variant_ticksize.h"
+
+1459333792 /home/bala/programming/sketchbook/ir.ino/variants/standard_m328p/variant_ticksize.h
+
+1459344747 source:/home/bala/programming/sketchbook/ir.ino/test.c
+
